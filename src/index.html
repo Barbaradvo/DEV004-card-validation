@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <form onsubmit="return false">
+    <nav>
+      <ul class="hlist">
+        <li>Inicio</li>
+        <li>Adopta</li>
+        <li>Productos</li>
+        <li>Carrito</li>
+      </ul>
+    </nav>
+    <header class="titulo">
+      <h1> Ingrese sus Datos</h1>
+    </header>
     <main></main>
+    <label for="inputNumero">Número Tarjeta</label>
+    <br>
+    <input type="text" id="inputNumero" maxlength="16" minlength=" 13" placeholder="0000 0000 0000 0000" >
+
+    <button type="button" id="validartarjeta">Validar Tarjeta</button>
+
+    <div id="result"></div>
     <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+  </form>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
